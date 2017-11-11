@@ -6,7 +6,7 @@
 #include "serialize.h"
 #include "uint256.h"
 
-#define BITCOIN_SEED_NONCE  0x0539a019ca550825ULL
+#define BITCOIN_SEED_NONCE  0x0539b110ca550825ULL
 
 using namespace std;
 
@@ -80,7 +80,7 @@ class CNode {
     CAddress me(CService("0.0.0.0"));
     BeginMessage("version");
     int nBestHeight = GetRequireHeight();
-    string ver = "/bitcoin-seeder:0.01/";
+    string ver = "/vertcoin-seeder:0.01/";
     vSend << PROTOCOL_VERSION << nLocalServices << nTime << you << me << nLocalNonce << ver << nBestHeight;
     EndMessage();
   }
