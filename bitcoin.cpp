@@ -6,7 +6,7 @@
 #include "serialize.h"
 #include "uint256.h"
 
-#define BITCOIN_SEED_NONCE  0x0539b110ca550825ULL
+#define BITCOIN_SEED_NONCE  0x0539a019ca550825
 
 using namespace std;
 
